@@ -14,6 +14,8 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+set novisualbell
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
@@ -165,7 +167,7 @@ if executable("ack")
 endif
 
 " Color scheme
-" colorscheme vividchalk
+colorscheme desert
 " highlight NonText guibg=#060606
 " highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -204,4 +206,9 @@ function! OpenURL()
   endif
 endfunction
 map <Leader>w :call OpenURL()<CR>
+
+augroup vagrant
+  au!
+  au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup end
 
