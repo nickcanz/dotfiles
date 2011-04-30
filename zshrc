@@ -5,6 +5,8 @@
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
 
+source /usr/local/rvm/scripts/rvm
+
 setopt appendhistory autocd extendedglob nomatch notify
 unsetopt beep
 
