@@ -14,14 +14,18 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+"Remap j and k to move screenlines and not file lines
+noremap j gj
+noremap k gk
+
+" case only matters with mixed case expressions
+set ignorecase
+set smartcase
+
 set novisualbell
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
-
-" This is an alternative that also works in block mode, but the deleted
-" text is lost and it only works for putting the current register.
-"vnoremap p "_dp
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -72,14 +76,6 @@ else
   set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
-
-" if has("folding")
-  " set foldenable
-  " set foldmethod=syntax
-  " set foldlevel=1
-  " set foldnestmax=2
-  " set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
-" endif
 
 " Softtabs, 2 spaces
 set tabstop=2
@@ -144,9 +140,6 @@ nmap <F1> <Esc>
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
 
-" Maps autocomplete to tab
-imap <Tab> <C-N>
-
 imap <C-L> <Space>=><Space>
 
 " Display extra whitespace
@@ -166,10 +159,6 @@ if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor\ --ignore-dir=tmp\ --ignore-dir=coverage
 endif
 
-" Color scheme
-" highlight NonText guibg=#060606
-" highlight Folded  guibg=#0A0A0A guifg=#9090D0
-
 " Numbers
 set number
 set numberwidth=5
@@ -182,10 +171,6 @@ let g:snippetsEmu_key = "<S-Tab>"
 set completeopt=longest,menu
 set wildmode=list:longest,list:full
 set complete=.,t
-
-" case only matters with mixed case expressions
-set ignorecase
-set smartcase
 
 " Tags
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
@@ -206,6 +191,7 @@ function! OpenURL()
 endfunction
 map <Leader>w :call OpenURL()<CR>
 
+"Set filetype to ruby for Vagrantfile
 augroup vagrant
   au!
   au BufRead,BufNewFile Vagrantfile set filetype=ruby
