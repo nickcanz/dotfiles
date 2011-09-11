@@ -6,6 +6,7 @@
 [[ -f ~/.localrc ]] && . ~/.localrc
 
 source /usr/local/rvm/scripts/rvm
+export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
 
 setopt appendhistory autocd extendedglob nomatch notify
 unsetopt beep
