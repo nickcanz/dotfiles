@@ -34,6 +34,10 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   set hlsearch
 endif
 
+set background=dark
+colorscheme solarized
+
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
   " Enable file type detection.
