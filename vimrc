@@ -198,3 +198,8 @@ augroup vagrant
   au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup end
 
+"Set filetype to ruby for Gemfile
+augroup gemfile
+  au!
+  au BufRead,BufNewFile Gemfile set filetype=ruby
+augroup end
