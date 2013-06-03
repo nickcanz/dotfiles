@@ -1,4 +1,0 @@
-#compdef vagrant
-local comms
-comms=(${(f)"$(vagrant -h | awk '{print $2}')"})
-compadd $comms
