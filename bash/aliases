@@ -3,3 +3,9 @@ alias reload='. ~/.bash_profile'
 alias ls='ls -a --color'
 alias s='cd ../'
 alias emacs='TERM='\''xterm-256color'\'' emacs -nw'
+export RSYNC_RSH="ssh"
+alias rsync='rsync -v --progress --partial'
+alias less="less -R"
+alias pga="sudo -upostgres psql postgres"
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32'
