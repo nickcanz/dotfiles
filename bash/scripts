@@ -3,7 +3,7 @@ function _ff_common_filter () {
   grep -vE '/(.git|CVS|.svn)/' | grep -vE '.swp(/|$)' | grep -v '/.rsync_cache/'
 }
 
-functon ffn  ) {
+functon ffn () {
   DIR="."
   if [ -d "$1" ]; then
     DIR="$1"
