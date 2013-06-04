@@ -3,6 +3,7 @@ source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
 source ~/.bash/scripts
+source ~/.bash/prompt
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
