@@ -11,6 +11,10 @@ shell -/bin/bash
 screen -t editor
 screen -t shell
 screen -t other
+screen -t server
+screen -t bash
+screen -t bash
+screen -t sql
 select 1
 select 0
 

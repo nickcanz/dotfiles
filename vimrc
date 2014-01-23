@@ -9,6 +9,7 @@ set backspace=indent,eol,start
 
 set splitbelow
 set splitright
+set mouse=a
 
 set nobackup
 set nowritebackup
@@ -25,7 +26,7 @@ noremap k gk
 set ignorecase
 set smartcase
 
-set novisualbell
+set visualbell
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -37,7 +38,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   set hlsearch
 endif
 
-set background=dark
+set background=light
 colorscheme solarized
 
 

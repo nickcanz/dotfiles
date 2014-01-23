@@ -1,6 +1,6 @@
 # misc
 alias reload='. ~/.bash_profile'
-alias ls='ls -a --color'
+alias ls='ls -aG'
 alias s='cd ../'
 alias emacs='TERM='\''xterm-256color'\'' emacs -nw'
 export RSYNC_RSH="ssh"
