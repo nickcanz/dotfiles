@@ -17,6 +17,7 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
+set linebreak
 
 "Remap j and k to move screenlines and not file lines
 noremap j gj
