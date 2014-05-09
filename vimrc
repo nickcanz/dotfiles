@@ -40,6 +40,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 set background=light
+let g:solarized_termtrans=1
 colorscheme solarized
 
 
