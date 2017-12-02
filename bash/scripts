@@ -11,3 +11,19 @@ function ffn () {
   fi
   find "$DIR" -type f -name "*$1*" | _ff_common_filter
 }
+
+# To decode:
+#   qp -d string 
+# To encode:
+#   qp string
+
+alias qpd='perl -MMIME::QuotedPrint -pe '\''$_=MIME::QuotedPrint::decode($_);'\'''
+alias qpe='perl -MMIME::QuotedPrint -pe '\''$_=MIME::QuotedPrint::encode($_);'\'''
+function qp {
+if [[ "$1" = "-d" ]]
+then
+	echo ${@:2} | qpd
+else
+	echo ${@} | qpe
+fi
+}

@@ -1,4 +1,5 @@
-export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/Users/ncanzoneri/pear/bin:/usr/local/Cellar/tsung/1.5.1/lib/tsung/bin/:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 #export DOCKER_HOST=tcp://localhost:4243
 export JAVA_HOME=$(/usr/libexec/java_home)
+export GOPATH=$HOME/work
+export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/Users/ncanzoneri/pear/bin:/usr/local/Cellar/tsung/1.5.1/lib/tsung/bin/:$PATH:$GOPATH/bin"

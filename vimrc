@@ -206,3 +206,5 @@ augroup gemfile
   au!
   au BufRead,BufNewFile Gemfile set filetype=ruby
 augroup end
+
+autocmd BufNewFile,BufRead *.proj set syntax=xml
