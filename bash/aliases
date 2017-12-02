@@ -11,3 +11,12 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
 alias vi='vim'
 alias mdc='pandoc -f markdown -t html5'
+
+function man_or_help() {
+  \man "$@"
+  if [ $? -ne 0 ]
+  then
+    "$1" -h
+  fi
+}
+alias man='man_or_help'
