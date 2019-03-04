@@ -98,23 +98,6 @@ let mapleader = ","
 " Edit the README_FOR_APP (makes :R commands work)
 map <Leader>R :e doc/README_FOR_APP<CR>
 
-" Leader shortcuts for Rails commands
-map <Leader>m :Rmodel 
-map <Leader>c :Rcontroller 
-map <Leader>v :Rview 
-map <Leader>u :Runittest 
-map <Leader>f :Rfunctionaltest 
-map <Leader>tm :RTmodel 
-map <Leader>tc :RTcontroller 
-map <Leader>tv :RTview 
-map <Leader>tu :RTunittest 
-map <Leader>tf :RTfunctionaltest 
-map <Leader>sm :RSmodel 
-map <Leader>sc :RScontroller 
-map <Leader>sv :RSview 
-map <Leader>su :RSunittest 
-map <Leader>sf :RSfunctionaltest 
-
 " Hide search highlighting
 map <Leader>h :set invhls <CR>
 
@@ -183,17 +166,17 @@ set tags=./tags;
 let g:fuf_splitPathMatching=1
 
 " Open URL
-command -bar -nargs=1 OpenURL :!open <args>
-function! OpenURL()
-  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
-  echo s:uri
-  if s:uri != ""
-	  exec "!open \"" . s:uri . "\""
-  else
-	  echo "No URI found in line."
-  endif
-endfunction
-map <Leader>w :call OpenURL()<CR>
+"command -bar -nargs=1 OpenURL :!open <args>
+"function! OpenURL()
+"  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
+"  echo s:uri
+"  if s:uri != ""
+"	  exec "!open \"" . s:uri . "\""
+"  else
+"	  echo "No URI found in line."
+"  endif
+"endfunction
+"map <Leader>w :call OpenURL()<CR>
 
 "Set filetype to ruby for Vagrantfile
 augroup vagrant
@@ -208,3 +191,8 @@ augroup gemfile
 augroup end
 
 autocmd BufNewFile,BufRead *.proj set syntax=xml
+autocmd QuickFixCmdPost *grep* cwindow
+
+autocmd FileType go nmap <leader>t  <Plug>(go-test)
+autocmd FileType go nmap <leader>tf  <Plug>(go-test-func)
+autocmd FileType go nmap <leader>b  <Plug>(go-build)

@@ -1,5 +1,8 @@
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export NPM_PACKAGES="${HOME}/.npm-packages"
+export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$NPM_PACKAGES/share/man:$MANPATH"
 #export DOCKER_HOST=tcp://localhost:4243
 export JAVA_HOME=$(/usr/libexec/java_home)
-export GOPATH=$HOME/work
-export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/Users/ncanzoneri/pear/bin:/usr/local/Cellar/tsung/1.5.1/lib/tsung/bin/:$PATH:$GOPATH/bin"
+export GOPATH="$HOME/github/go"
+export GOBIN="$GOPATH/bin"
+export PATH="~/github/awssume/bin:$NPM_PACKAGES/bin:~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/Users/ncanzoneri/pear/bin:/usr/local/Cellar/tsung/1.5.1/lib/tsung/bin/:$PATH:$GOPATH/bin"
+#export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
