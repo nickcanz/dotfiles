@@ -6,7 +6,7 @@ alias emacs='TERM='\''xterm-256color'\'' emacs -nw'
 export RSYNC_RSH="ssh"
 alias rsync='rsync -v --progress --partial'
 alias less="less -R"
-export GREP_OPTIONS='--color=auto'
+alias grep="grep --color=auto"
 export GREP_COLOR='1;32'
 alias vi='vim'
 alias mdc='pandoc -f markdown -t html5'
