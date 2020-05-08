@@ -2,4 +2,6 @@
 
 set -e
 
+cd "${0%/*}"
+
 rake install
