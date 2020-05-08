@@ -1,3 +1,6 @@
 function _ssh_completion(){
-perl -ne 'print "$1 " if /^Host (.+)$/' ~/.ssh/config
+  if [[ -d ~/.ssh ]]
+  then
+    perl -ne 'print "$1 " if /^Host (.+)$/' ~/.ssh/config
+  fi
 }
