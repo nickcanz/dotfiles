@@ -7,6 +7,6 @@ then
 fi
 export GOPATH="$HOME/github/go"
 export GOBIN="$GOPATH/bin"
-export PATH="~/github/awssume/bin:$NPM_PACKAGES/bin:~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/Users/ncanzoneri/pear/bin:/usr/local/Cellar/tsung/1.5.1/lib/tsung/bin/:$PATH:$GOPATH/bin:~/.cabal/bin:~/.ghcup/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin/"
+export PATH="/usr/local/opt/mysql@5.7/bin:~/codeql-home/codeql:~/github/awssume/bin:$NPM_PACKAGES/bin:~/bin:~/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/Users/ncanzoneri/pear/bin:/usr/local/Cellar/tsung/1.5.1/lib/tsung/bin/:$PATH:$GOPATH/bin:~/.cabal/bin:~/.ghcup/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin/"
 export PATH="/usr/local/homebrew/opt/mysql-client/bin:$PATH"
 #export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"

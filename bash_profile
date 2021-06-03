@@ -7,3 +7,4 @@ fi
 eval "$(rbenv init -)"
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
