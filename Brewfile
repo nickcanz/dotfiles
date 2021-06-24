@@ -1,0 +1,15 @@
+tap "homebrew/cask"
+
+brew "gh"
+brew "bash"
+brew "coreutils"
+brew "vim"
+brew "neovim"
+brew "rbenv"
+brew "gnupg"
+
+cask "alfred"
+cask "docker"
+cask "rectangle"
+cask "iterm2"
+cask "gpg-suite"
