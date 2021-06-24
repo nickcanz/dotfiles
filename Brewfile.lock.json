@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "eb541f6e92e892363ff6ddadfcf77bf1fc7fbb71"
+        "revision": "f92e9242cd4cd7459e856272fd1f7eb1bb3eecea"
       }
     },
     "brew": {
@@ -372,6 +372,66 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "slack": {
+        "version": "4.17.0",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "google-chrome": {
+        "version": "91.0.4472.114",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "spotify": {
+        "version": "1.1.61.583.gad060c66,1.1.61.583.gad060c66-7",
+        "options": {
+          "full_name": "spotify"
+        }
+      },
+      "zoom": {
+        "version": "5.7.0.446",
+        "options": {
+          "full_name": "zoom"
+        }
+      },
+      "1password": {
+        "version": "7.8.6",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "rstudio": {
+        "version": "1.4.1717",
+        "options": {
+          "full_name": "rstudio"
+        }
+      },
+      "firefox": {
+        "version": "89.0.2",
+        "options": {
+          "full_name": "firefox"
+        }
+      },
+      "amazon-music": {
+        "version": "8.4.0.2249,224949_d5c94ee480b0c856a9257863319df96e",
+        "options": {
+          "full_name": "amazon-music"
+        }
+      },
+      "microsoft-teams": {
+        "version": "1.4.00.11161",
+        "options": {
+          "full_name": "microsoft-teams"
+        }
+      },
+      "numi": {
+        "version": "3.30.692",
+        "options": {
+          "full_name": "numi"
+        }
       }
     }
   },
@@ -380,7 +440,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.2.0-47-gdc2c0ec",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "e61fe98f3a0b70247fbcc0dcfcfc061af56a19f1",
+        "Homebrew/homebrew-core": "52602a3eef288215110d214c10cf886b60259a77",
         "CLT": "12.5.0.22.9",
         "Xcode": "12.5.1",
         "macOS": "11.4"
