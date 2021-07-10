@@ -7,6 +7,8 @@ export HISTFILESIZE=
 export HISTSIZE=
 export HISTFILE=~/.bash_eternal_history
 
+blue_color="\033[0;34m"
+no_color="\033[0m"
 # %F Equivalent fo %Y-%m-%d
 # %T Time in 24-hour notation, %H:%M:%S
-export HISTTIMEFORMAT="[%F %T] "
+export HISTTIMEFORMAT=`echo -e ${blue_color}[%F %T] ${no_color} `

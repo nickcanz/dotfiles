@@ -12,6 +12,7 @@ show_time() {
 if [[ ! $PROMPT_COMMAND =~ store_exit_status ]]; then
   export PROMPT_COMMAND="store_exit_status && ${PROMPT_COMMAND:-:}"
 fi
+
 store_exit_status() {
   LAST_EXIT_STATUS=$?
 }
@@ -62,5 +63,5 @@ prompt_color() {
   echo "${COLOR_BROWN}"
 }
 
-
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 export PS1='$(show_time) $(prompt_color)'"\u@\h${COLOR_NONE}: ${COLOR_CYAN}\w${COLOR_NONE}"'$(show_exit_status)$(show_git_branch_and_status)'"\n$ "
