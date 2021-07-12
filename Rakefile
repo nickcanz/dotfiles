@@ -6,7 +6,13 @@ task :install do
   replace_all = true
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE].include? file
-    
+
+    if file == 'nvim'
+      puts "linking ~/.config/#{file}"
+      system %Q{ln -s "$PWD/#{file}" "$HOME/.config/#{file}"}
+      next
+    end
+
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
         puts "identical ~/.#{file.sub('.erb', '')}"
